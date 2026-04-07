@@ -20,7 +20,9 @@ export default function storeReducer(state, action) {
       return {
         ...state, contacts: state.contacts.map(contact => {
           if (contact.id == action.payload.id) {
-            contact = action.payload
+            return action.payload
+          }else{
+            return contact
           }
         })
       }

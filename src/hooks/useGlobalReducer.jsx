@@ -49,6 +49,7 @@ export function StoreProvider({ children }) {
 
     const updateContact = (id, contact) => {
         console.log("este es el id del PUT" + id)
+        console.log(contact)
 
         fetch(`${API}/${id}`, {
 
@@ -59,10 +60,10 @@ export function StoreProvider({ children }) {
             body: JSON.stringify(contact)
         })
             .then((response) => {
-                response.json()
+                return response.json()
             })
             .then((data) => {
-                console.log(response?.data?.name);
+                console.log(data)
                 dispatch({ type: "UPDATE_CONTACT", payload: data })
             })
 
