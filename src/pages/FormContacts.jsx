@@ -58,7 +58,6 @@ export const FormContacts = () => {
 
   return (
     <>
-      <div>FormContacts</div>
 
       <div className="container my-4">
         <h1 className='text-center mb-3'>{!id ? "Agregar un nuevo contacto" : `Actualizar Contacto: ${name}`}</h1>

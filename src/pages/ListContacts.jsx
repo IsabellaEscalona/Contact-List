@@ -40,7 +40,6 @@ const ListContacts = () => {
 
     return (
         <div className="container-fluid">
-            <div>ListContacts</div>
 
             <div className="row p-3">
                 <Link to={"/AddContact"}>
